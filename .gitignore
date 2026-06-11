@@ -1,2 +1,4 @@
-# Ignore the Context.md file
 Context.md
+.agents
+skills-lock.json
+# .gitignore
