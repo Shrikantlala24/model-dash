@@ -1,4 +1,22 @@
+.gitignore
+
+# Contextual files
 Context.md
-.agents
+flowchart.md
+
+# configuration files
+package-lock.json
+package.json
+opencode.json
 skills-lock.json
-# .gitignore
+
+# Agent usage specific files
+.agents
+
+# Dev Environment files
+node_modules
+venv
+.env
+
+
+# ctx7sk-674c57c6-8be5-465a-be29-cb2cbf4d026a

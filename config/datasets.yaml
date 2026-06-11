@@ -1,0 +1,44 @@
+datasets:
+  house_prices:
+    problem_type: regression
+    source: https://www.kaggle.com/c/house-prices-advanced-regression-techniques/download/train.csv
+    target_column: SalePrice
+    description: Predict house prices from features
+    n_rows_expected: 1460
+    
+  titanic:
+    problem_type: binary_classification
+    source: https://www.kaggle.com/c/titanic/download/train.csv
+    target_column: Survived
+    description: Predict survival probability
+    n_rows_expected: 891
+
+  fashion_mnist:
+    problem_type: multiclass_classification
+    source: keras  # Built-in dataset
+    target_column: label
+    description: Classify fashion items (10 classes)
+    
+  mnist:
+    problem_type: multiclass_classification
+    source: keras
+    target_column: label
+    description: Handwritten digit recognition (10 classes)
+    
+  mall_customers:
+    problem_type: clustering
+    source: https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-clustering-analysis
+    target_column: null  # No target for clustering
+    description: Customer segmentation (4 clusters)
+    
+  credit_card_fraud:
+    problem_type: anomaly_detection
+    source: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+    target_column: Class
+    description: Detect fraudulent transactions
+    
+  sp500_returns:
+    problem_type: time_series_regression
+    source: yfinance  # Live API
+    target_column: next_day_return
+    description: Predict S&P 500 next-day return
